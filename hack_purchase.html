@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Notes</title>
+    <link rel="stylesheet" href="hack_purchase.css">
+</head>
+<body>
+    <div class="purchase-section">
+        <h1>Purchase Notes</h1>
+        <p>Select your preferred option:</p>
+
+        <div class="options">
+            <div class="option">
+                <h3>Monthly Subscription</h3>
+                <p>Access unlimited notes for a month.</p>
+                <button onclick="purchase('Monthly Subscription', 39.99)">Buy for 49.99</button>
+            </div>
+
+            <div class="option">
+                <h3>Yearly Subscription</h3>
+                <p>Get unlimited access for a year at a discounted price.</p>
+                <button onclick="purchase('Yearly Subscription', 249.99)">Buy for 499.99</button>
+            </div>
+
+            <div class="option">
+                <h3>Specific Note</h3>
+                <p>Buy a specific note for your needs.</p>
+                <button onclick="purchase('Specific Note', 19.99)">Buy for 19.99</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+            <button onclick="proceedToPayment()">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

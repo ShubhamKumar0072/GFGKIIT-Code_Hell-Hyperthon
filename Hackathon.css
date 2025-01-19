@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fef9e1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f4f4f9; */
+}
+
+/* Logo container */
+.logo-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Logo image */
+.logo {
+    max-width: 60%; /* Adjust size relative to the screen width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80vh; /* Prevent it from exceeding the viewport height */
+    border-radius: 10px; /* Optional for rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional for aesthetics */
+}
+
+.login{
+    text-align: center;
+    min-width: 340px;
+    margin: 120px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 14px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 16px;
+ }
+ .login-btn{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+ }
